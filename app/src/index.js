@@ -20,8 +20,8 @@ const App = createStackNavigator(
     Intro: {
       screen: Pages.Intro
     },
-    Login: {
-      screen: Pages.Login
+    Upload: {
+      screen: Pages.Upload
     }
   },
   {

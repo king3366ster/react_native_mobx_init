@@ -1,12 +1,12 @@
 import React from 'react'
 import { Image } from 'react-native'
-import { createTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator } from 'react-navigation'
 
 import Pages from './pages'
 import Resources from './resource'
 import { tabStyle, baseBlueColor } from './common/styles'
 
-const Tabs = createTabNavigator(
+const Tabs = createBottomTabNavigator(
   {
     Custom: {
       screen: Pages.Custom,
@@ -44,10 +44,10 @@ const Tabs = createTabNavigator(
         )
       }
     },
-    Education: {
-      screen: Pages.Education,
+    Upload: {
+      screen: Pages.Upload,
       navigationOptions: {
-        tabBarLabel: '学堂',
+        tabBarLabel: '上传',
         tabBarIcon: ({ tintColor }) => (
           <Image
             source={Resources.icons.icon1}

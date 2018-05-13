@@ -30,10 +30,10 @@ allprojects {
 ```
 
 - app/android/gradle.properties
-打线上包的时候再加上
+android.enableAapt2=false 打线上包的时候再加上
 ```
 android.useDeprecatedNdk=true
-android.enableAapt2=false
+# android.enableAapt2=false
 ```
 
 - app/android/app/build.gradle
@@ -59,7 +59,7 @@ dependencies {
 
 - app/android/gradle/wrapper/gradle-wrapper.properties
 ```
-    distributionUrl=https\://services.gradle.org/distributions/gradle-4.4-all.zip
+    distributionUrl=https\://services.gradle.org/distributions/gradle-4.5-all.zip
     android.enableAapt2=false
 ```
 
@@ -142,3 +142,11 @@ buildTypes {
 ```
 ./gradlew assembleRelease
 ```
+
+### 预览
+- 首页
+[!-](./首页.png)
+- 设置
+[!-](./设置.png)
+- 上传
+[!-](./上传.png)
